@@ -1,0 +1,68 @@
+<% include partials/header %>
+<div id="app-form" class="container">
+   <div id="instructions">
+        <h1>Premedical application</h1>
+    </div>
+<form action="/premed" method="POST" id="register">
+         <div class="form-row">
+            <div class="form-group col-md-4">
+              <label class="col-form-label">Full Name</label>
+              <input type="text" name="appl[full_name]" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="email" class="col-form-label">Email</label>
+              <input type="email" name="appl[email]" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="number" class="col-form-label">Contact Number</label>
+              <input type="tel" name="appl[contact_number]" class="form-control"placeholder="Phone Number">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label class="col-form-label">Parent Full Name</label>
+              <input type="text" name="appl[p_name]" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputEmail4" class="col-form-label">Parent Email</label>
+              <input type="email" name="appl[p_email]" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group col-md-4">
+              <label class="col-form-label">Parent Contact Number</label>
+              <input type="tel" name="appl[p_contact_number]" class="form-control" placeholder="Phone Number">
+            </div>
+          </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="applicationType">Application Type</label>
+                    <select name="appl[app_type]" class="form-control studenttype">
+                    <option value="2">College Student</option></option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="exampleFormControlSelect1">Birthday</label>
+                     <input class="form-control" type="date" name="appl[bday]">
+                </div>
+            </div>
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="exampleFormControlInput1">College Name</label>
+                <input type="text" name="appl[school_type]"class="form-control" placeholder="College Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="exampleFormControlInput1">GPA</label>
+                <input type="text" name="appl[gpa]" class="form-control" placeholder="3.0">
+              </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Essay Prompt: What matters to you and why?t</label>
+            <textarea name="appl[essay]" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+          </div>
+          <div id="submit">
+              <button type="submit" class="btn btn-primary btn-lg">Apply</button>
+          </div>
+          <a href="/">Home</a>
+    </form>
+</div>
+
+<% include partials/footer %>

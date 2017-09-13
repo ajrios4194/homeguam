@@ -1,0 +1,44 @@
+/*//ADMIN*/
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color:#e6faff;
+}
+
+.table-striped thead {
+    text-align: center;
+}
+
+
+.flex-column {
+    margin-top: 90px;
+}
+
+main {
+    margin-top: 65px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #3ed8ee;
+}
+
+a {
+    color: #6a6a6c;
+}
+
+.wspace {
+    height:500px;
+}
+
+.btn-primary {
+    background-color:#3ed8ee;
+    border-color: #3ed8ee;
+}
+
+.badge-primary {
+    background-color:#3ed8ee;
+    border-color: #3ed8ee;
+}
+
+.random {
+    text-align:center;
+}

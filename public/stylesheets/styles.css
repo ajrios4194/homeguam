@@ -1,0 +1,167 @@
+/*LANDING*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color:#e6faff;
+}
+
+.inverted {
+    padding: 0;
+}
+
+.home-top {
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;  
+    width: 100%;
+    position: relative;
+}
+
+.home-top div h1 {
+    padding-top: 200px;
+    text-align: center;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 4px 6px rgba(0,0,0,0.3);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.what-is .row h2 {
+    padding-top: 100px;
+    margin: auto;
+    color: black;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.what-is {
+    height:500px;  
+    width: 100%;
+    background-color: white;
+}
+.people {
+    height:500px;  
+    width:100%;
+    background-color:#e6ffff;
+}
+
+
+.scrolled {
+    transition: all 0.6s ease-out;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.mainlink {
+    text-shadow: 2px 4px 6px rgba(0,0,0,0.3);
+   padding-top: 5px;
+   padding-left: 10px;
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+}
+
+.mainnav {
+    padding-top: 10px;
+}
+
+.logo {
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+.btn-outline-primary {
+    color: white;
+    margin-right: 30px;
+}
+
+.btn-primary {
+    background-color: #3ed8ee;
+    border-color: #3ed8ee;
+}
+
+
+.form-inline {
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+
+#icons {
+   font-size: 48px;
+}
+
+
+.col-8{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#what-is {
+    padding-top: 50px;
+    height: 500px;
+}
+
+
+#call-to-action {
+    height:580px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/*application*/
+#app-form {
+    display: block;
+    margin: 80px auto;
+    width: 65%;
+    box-shadow: 1px 1px 5px #888888;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+     background-color: white;
+}
+
+#instructions {
+    text-align: center;
+    padding: 20px;
+}
+
+#submit {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.highschool {
+    background-color: #3ed8ee;
+    border-color: #3ed8ee;
+}
+
+#premed {
+    background-color: #d3d3d3;
+    border-color:#d3d3d3;
+    margin-bottom:10px;
+}
+
+.applications {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+a {
+    color: #3ed8ee;
+    padding-left: 10px;
+}
+
+.midrow {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.redirect {
+    float: right;
+}
+

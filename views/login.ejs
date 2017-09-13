@@ -1,0 +1,40 @@
+<% include partials/header %>
+
+<div id="app-form" class="container">
+        <div id="instructions">
+            <h1>Log In</h1>
+        </div>
+        <form action="/login" method="POST" id="register">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4" class="col-form-label">Email</label>
+              <input type="text" name="username" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4" class="col-form-label">Password</label>
+              <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+          </div>
+          <div id="submit">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </form>
+        <a href="/">Home</a>
+        <a class="redirect" href="/apply">Don't have an account?</a>
+    </div>
+<!--<div id="app-form" class="container">-->
+<!--    <div id="instructions">-->
+<!--        <h1>Log In</h1>-->
+<!--        <p>Please choose an option.</p>-->
+<!--    </div>-->
+<!--    <div class="container applications">-->
+<!--        <a href="/student" class="btn btn-primary btn-lg highschool">Student</a>-->
+<!--        <a  href="/mentor" class="btn btn-primary btn-lg highschool">Mentor</a>-->
+<!--        <a  href="/staff"class="btn btn-primary btn-lg highschool">Staff</a>-->
+<!--    </div>-->
+<!--     <a href="/">Home</a>-->
+<!--     <a class="redirect" href="/apply">Don't have an account?</a>-->
+<!--</div>-->
+
+
+<% include partials/footer %>

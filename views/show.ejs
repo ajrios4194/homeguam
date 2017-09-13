@@ -1,0 +1,60 @@
+<% include partials/header %>
+       
+     <div id="app-form" class="container">
+        <div id="instructions">
+            <h1><%= applicant.full_name %></h1>
+        </div>
+        <div class="row midrow">
+            <div id="left" class="col-md-6">
+                <label><strong>Email</strong></label>
+                <p><%= applicant.email%></p>
+            </div>
+            <div id ="right" class="col-md-6">
+                <label><strong>Contact Number</strong></label>
+                <p><%= applicant.contact_number%></p>
+            </div>
+        </div>
+        <div class="row midrow">
+            <div class="col-md-4">
+                <label><strong>Parent Name</strong></label>
+                <p><%= applicant.p_name%></p>
+            </div>
+            <div class="col-md-4">
+                <label><strong>Parent Email</strong></label>
+                <p><%= applicant.p_email%></p>
+            </div>
+            <div class="col-md-4">
+                <label><strong>Parent Contact</strong></label>
+                <p><%= applicant.p_contact_number%></p>
+            </div>
+        </div>
+        <div class="row midrow">
+            <div class="col-md-4">
+                <label><strong>Application Type</strong></label>
+                <% if (applicant.app_type === 1) { %>
+                    <p>High School Student</p>
+                <% } else if(applicant.app_type === 2) { %>
+                    <p>College Student</p>
+                <% } %>   
+            </div>
+            <div class="col-md-4">
+                <label><strong>School</strong></label>
+                <p><%= applicant.school_type%></p>
+            </div>
+            <div class="col-md-4">
+                <label><strong>GPA</strong></label>
+                <p><%= applicant.gpa%></p>
+            </div>
+        </div>
+        <div class="row midrow">
+            <div class="col">
+                <label><strong>Essay</strong></label>
+                <p><%= applicant.essay%></p>
+            </div>
+        </div>
+     </div>  
+        
+
+    
+
+<% include partials/footer %>

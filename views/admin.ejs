@@ -1,0 +1,69 @@
+<% include partials/appheader %>
+    
+ <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Dashboard</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+         <a class="nav-link" href="/logout">Logout</a>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="optionsa nav-link active" href="#">Applications<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="optionsb nav-link" href="/mentorshow">Mentors</a>
+            </li>
+            <li class="nav-item">
+              <a class="optionsc nav-link" href="#">Announcements</a>
+            </li>
+          </ul>
+        </nav>
+
+        <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
+          <h1>Applicants</h1>
+          <p>Use this to track applicants and read their applications.</p>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Applicant Name</th>
+                  <th>Application Type</th>
+                  <th>School</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% applicants.forEach(function(applicant){ %>
+                    <tr>
+                      <td><a href="/admin/<%=applicant._id%>"><%= applicant.full_name %></a></td>
+                      <% if (applicant.app_type === 1) { %>
+                          <td>High School Student</td>
+                      <% } else if(applicant.app_type === 2) { %>
+                          <td>College Student</td>
+                      <% } %>    
+                      <td><%= applicant.school_type %></td>
+                    </tr>
+                <% }) %>
+              </tbody>
+            </table>
+            <div class="container wspace"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+
+
+<% include partials/footer %>

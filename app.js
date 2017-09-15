@@ -217,8 +217,7 @@ function isMentor(req,res,next) {
  
 // User.register(new User({username: "homemedicalprogram@gmail.com", role: 1}), "password");
 // User.register(new User({username: "student@gmail.com", role: 3}), "password");
-// User.register(new User({username: "mentor@gmail.com", role: 2}), "password");
-// User.register(new User({username: "mentor2@gmail.com", role: 2, opt: 1, mentees: 3}), "password");
-// User.register(new User({username: "mentor3@gmail.com", role: 2, opt: 2, mentees: null}), "password");
-
-// User.register(new User({username: "mentortwo@gmail.com", role: 2, opt: 1, mentees: 3}), "password");
+// User.register(new User({username: "Dr. del Rosario", role: 2}), "password");
+// User.register(new User({username: "Dr. Berg", role: 2, opt: 1, mentees: 3}), "password");
+// User.register(new User({username: "Dr. Shieh", role: 2, opt: 2, mentees: null}), "password");
+// User.register(new User({username: "Dr. Carlos", role: 2, opt: 1, mentees: 3}), "password");

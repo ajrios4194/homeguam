@@ -28,6 +28,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#what-is {
+    background-color:white;
+    padding-top:40px;
+}
+
+#thisone {
+    background-color: white;
+}
+
 .what-is .row h2 {
     padding-top: 100px;
     margin: auto;
@@ -36,11 +45,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.what-is {
-    height:500px;  
-    width: 100%;
-    background-color: white;
-}
+
 .people {
     height:500px;  
     width:100%;
@@ -92,25 +97,41 @@ body {
    font-size: 48px;
 }
 
+#hamburger {
+    font-size: 30px;
+}
 
-.col-8{
+.landing {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-#what-is {
-    padding-top: 50px;
-    height: 500px;
+.wrapper {
+    position: relative;
+    padding-bottom: 35.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.wrapper iframe {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
 }
 
-
-#call-to-action {
-    height:580px;
-    padding-left: 30px;
-    padding-right: 30px;
+.align-items-center {
+    padding-top:250px;
+    padding-bottom: 50px;
 }
 
+button i {
+    color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+}
 
 /*application*/
 #app-form {

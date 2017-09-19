@@ -39,6 +39,10 @@ a {
     border-color: #3ed8ee;
 }
 
-.random {
+#mentorupdate {
     text-align:center;
+}
+
+#mentorupdatebutton {
+    margin-top:15px;
 }

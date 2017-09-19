@@ -52,14 +52,21 @@ app.get("/", function(req,res) {
 });
 
 //ALUMNI
-app.get("/alumni", function(req,res) {
-   res.render("alumni"); 
+app.get("/community/alumni", function(req,res) {
+   res.render("alumnilist"); 
 });
 
 //MENTORS
-app.get("/homedoctors", function(req,res) {
-   res.render("mentors"); 
+app.get("/community/mentors", function(req,res){
+   res.render("mentorlist")
 });
+
+//HOME Team
+app.get("/community/hometeam", function(req,res){
+   res.render("hometeam")
+});
+
+
 
 //APPLICATION PAGE
 app.get("/apply", function(req,res) {
@@ -216,8 +223,8 @@ function isMentor(req,res,next) {
 //TEST ACCOUNTS
  
 // User.register(new User({username: "homemedicalprogram@gmail.com", role: 1}), "password");
-// User.register(new User({username: "student@gmail.com", role: 3}), "password");
-// User.register(new User({username: "Dr. del Rosario", role: 2}), "password");
+// // User.register(new User({username: "student@gmail.com", role: 3}), "password");
+// // User.register(new User({username: "Dr. del Rosario", role: 2}), "password");
 // User.register(new User({username: "Dr. Berg", role: 2, opt: 1, mentees: 3}), "password");
-// User.register(new User({username: "Dr. Shieh", role: 2, opt: 2, mentees: null}), "password");
-// User.register(new User({username: "Dr. Carlos", role: 2, opt: 1, mentees: 3}), "password");
+// // User.register(new User({username: "Dr. Shieh", role: 2, opt: 2, mentees: null}), "password");
+// // User.register(new User({username: "Dr. Carlos", role: 2, opt: 1, mentees: 2}), "password");

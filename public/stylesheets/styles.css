@@ -25,8 +25,8 @@ body {
     color: white;
     text-shadow: 2px 4px 6px rgba(0,0,0,0.3);
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
 }
+
 
 #what-is {
     background-color:white;
@@ -105,33 +105,26 @@ body {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 20px;
 }
 
-.wrapper {
-    position: relative;
-    padding-bottom: 35.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-.wrapper iframe {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 30px;
-}
 
 .align-items-center {
-    padding-top:250px;
+    padding-top:200px;
     padding-bottom: 50px;
 }
+
 
 button i {
     color: white;
     margin-top: 10px;
     margin-right: 10px;
 }
+
+.bouncelinks {
+    color:#3ed8ee;
+}
+
 
 /*application*/
 #app-form {
@@ -172,11 +165,6 @@ button i {
 }
 
 
-a {
-    color: #3ed8ee;
-    padding-left: 10px;
-}
-
 .midrow {
     text-align: center;
     padding-bottom: 15px;
@@ -184,5 +172,83 @@ a {
 
 .redirect {
     float: right;
+}
+
+.navbar-brand {
+    padding-top:7px;
+    padding-bottom:5px;
+}
+
+
+
+/*.forms {*/
+
+/*}*/
+
+/*GALLERY*/
+
+body {
+  min-height: 75rem; /* Can be removed; just added for demo purposes */
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.gallerynav {
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+.card {
+  float: left;
+  width: 33.33%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
 }
 

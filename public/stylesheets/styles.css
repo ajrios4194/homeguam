@@ -105,12 +105,12 @@ body {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 
 .align-items-center {
-    padding-top:200px;
+    padding-top:150px;
     padding-bottom: 50px;
 }
 
@@ -125,6 +125,9 @@ button i {
     color:#3ed8ee;
 }
 
+.embed-responsive {
+    padding-bottom:20px;
+}
 
 /*application*/
 #app-form {
@@ -177,13 +180,12 @@ button i {
 .navbar-brand {
     padding-top:7px;
     padding-bottom:5px;
+    padding-left:15px;
 }
 
-
-
-/*.forms {*/
-
-/*}*/
+.forms {
+    max-width: 33rem;
+}
 
 /*GALLERY*/
 

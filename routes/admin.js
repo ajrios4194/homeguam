@@ -24,7 +24,7 @@ router.get("/donations", isAdmin, function(req, res){
     //         res.render("results", {data: data});
     //     }
     // });
-    res.send("donations page");
+    res.send("donations page coming soon!");
 });
 
 //ADMIN MAIN

@@ -6,7 +6,6 @@ var express = require("express"),
 
 //ADMIN's MENTOR STATUS PAGE
 router.get("/mentors", isAdmin, function(req,res) {
-    console.log("success");
    User.find({role:2}, function(err, mentors) {
       if(err) {
          console.log('error');
@@ -29,7 +28,6 @@ router.get("/donations", isAdmin, function(req, res){
 
 //ADMIN MAIN
 router.get("/", isAdmin, function(req,res) {
-    console.log("success");
    Applicant.find({}, function(err, applicants) {
       if(err) {
          console.log('error');
@@ -41,8 +39,6 @@ router.get("/", isAdmin, function(req,res) {
 
 //Show applicant route
 router.get("/:id", isAdmin, function(req,res){
-        console.log("1");
-
    Applicant.findById(req.params.id, function(err, foundApplicant){
       if(err){
          res.redirect("/admin");

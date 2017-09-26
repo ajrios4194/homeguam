@@ -184,7 +184,7 @@ button i {
 }
 
 .forms {
-    max-width: 33rem;
+    max-width: 40rem;
 }
 
 /*GALLERY*/
@@ -253,4 +253,6 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+
+
 

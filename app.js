@@ -12,9 +12,11 @@ var express                = require("express"),
     adminRoutes            = require("./routes/admin"),
     mentorRoutes           = require("./routes/homementor");
     
-var promise = mongoose.connect('mongodb://localhost/home_guam_users', {
-  useMongoClient: true,
+
+var promise = mongoose.connect(process.env.DATABASEURL, {
+    useMongoClient: true,
 });
+
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -50,7 +52,7 @@ app.listen(process.env.PORT, process.env.IP, function() {
 
 //TEST ACCOUNTS
  
-// User.register(new User({username: "homemedicalprogram@gmail.com",role:1}), "password");
+// User.register(new User({username: "homemedicalprogram@gmail.com",role:1}), "hometeam2012");
 // User.register(new User({username: "student@gmail.com",role:3}), "password");
-// User.register(new User({username: "Dr.del Rosario",role: 2,opt: 1,mentees:1}), "password");
-// User.register(new User({username: "Dr.Shieh",role:2,opt: 2,mentees:1}), "password");
+// User.register(new User({username: "adrosario",role: 2,opt: 1,mentees:1}), "onemikelove");
+// User.register(new User({username: "nberg",role:2,opt: 2,mentees:1}), "fistulaplasty");

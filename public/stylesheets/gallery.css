@@ -1,6 +1,7 @@
 
 body {
   min-height: 75rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
@@ -62,6 +63,10 @@ body {
   width: 100%;
 }
 
+.card > img.gal {
+  height: 300px;
+}
+
 .card-text {
   font-size: 85%;
 }
@@ -83,3 +88,4 @@ footer p {
 p a {
   color: #3ed8ee;
 }
+

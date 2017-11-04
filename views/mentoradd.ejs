@@ -1,0 +1,42 @@
+<% include partials/appheader %>
+        
+        <form action="/premed" method="POST" id="register">
+                 <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label class="col-form-label">Mentor Username.  Use scheme: (first letter of first name)(lastname)</label>
+                      <input type="text" name="nmentor[full_name]" class="form-control" placeholder="Example: 'adelrosario'">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="password" class="col-form-label">Password</label>
+                      <input type="password" name="nmentor[password]" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group col-md-4">
+                              <label for="email" class="col-form-label">Clinic Name</label>
+                              <input type="password" name="nmentor[clinic_name]" class="form-control" placeholder="American Medical Center">
+                    </div>
+                  </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                                 <label for="applicationType">Taking students this year?</label>
+                                <select name="nmentor[opt]" class="form-control studenttype">
+                                <option value="1">Yes</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="applicationType">Application Type</label>
+                            <select name="nmentor[role]" class="form-control studenttype">
+                            <option value="2">Mentor</option></option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="email" class="col-form-label">How many mentees?</label>
+                             <input type="number" name="nmentor[mentees]" class="form-control" placeholder="American Medical Center">
+                        </div>
+                    </div>
+                  <div id="submit">
+                      <button type="submit" class="btn btn-primary btn-lg">Add Mentor</button>
+                  </div>
+                  <a class="bouncelinks" href="/">Home</a>
+        </form>
+        
+<% include partials/footer %>

@@ -133,7 +133,7 @@ button i {
 #app-form {
     display: block;
     margin: 80px auto;
-    width: 65%;
+    /*width: 65%;*/
     box-shadow: 1px 1px 5px #888888;
     border-radius: 10px;
     -webkit-border-radius: 10px;

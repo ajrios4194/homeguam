@@ -11,11 +11,8 @@ var express                = require("express"),
     homepageRoutes         = require("./routes/homepage"),
     adminRoutes            = require("./routes/admin"),
     mentorRoutes           = require("./routes/homementor");
-    
 
-// var promise = mongoose.connect(process.env.DATABASEURL, {
-//     useMongoClient: true,
-// });
+
 console.log(process.env.DATABASEURL)
 var promise = mongoose.connect(process.env.DATABASEURL, {
   useMongoClient: true,
@@ -49,7 +46,4 @@ app.use("/homementor",mentorRoutes);
 app.listen(process.env.PORT, process.env.IP, function() {
    console.log("APP IS RUNNING"); 
 });
-
-
-
 

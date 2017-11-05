@@ -2,7 +2,6 @@ var express = require("express"),
     router  = express.Router(),
     User    = require("../models/user.js"),
     Applicant = require("../models/applicant.js"),
-   //  Mentor   = require("../models/mentor.js"),
     passport = require("passport");
 
 //ADMIN's MENTOR STATUS PAGE
@@ -17,20 +16,20 @@ router.get("/mentors", isAdmin, function(req,res) {
 });
 
 //ADMIN's ADD MENTOR PAGE
-// router.get("/mentors/add", isAdmin, function(req,res) {
-//    res.send("mentoradd");
-// });
+router.get("/mentors/add", isAdmin, function(req,res) {
+   res.send("mentoradd");
+});
 
-// router.post("/mentors/add", function(req,res) {
-//    Mentor.create(req.body.nmentor, function(err, newApplicant){
-//       if(err){
-//          res.render("/mentors/add");
-//          console.log(err);
-//       } else {
-//          res.redirect("/mentors");
-//       }
-//    });
-// });
+router.post("/mentors/add", function(req,res) {
+   User.create(req.body.nmentor, function(err, newMentor){
+      if(err){
+         res.render("/mentors/add");
+         console.log(err);
+      } else {
+         res.redirect("/mentors");
+      }
+   });
+});
 
 //DONATIONS ADMIN PAGE
 router.get("/donations", isAdmin, function(req, res){
@@ -44,7 +43,7 @@ router.get("/donations", isAdmin, function(req, res){
 });
 
 //ADMIN MAIN
-router.get("/", isAdmin, function(req,res) {
+router.get("/", function(req,res) {
    Applicant.find({}, function(err, applicants) {
       if(err) {
          console.log('error');
@@ -64,11 +63,6 @@ router.get("/:id", isAdmin, function(req,res){
       }   
    });
 });
-
-
-
-
-
 
 
 

@@ -69,6 +69,7 @@ body {
 
 .mainnav {
     padding-top: 10px;
+    padding-left: 4px;
 }
 
 .logo {
@@ -154,6 +155,7 @@ button i {
 .highschool {
     background-color: #3ed8ee;
     border-color: #3ed8ee;
+    margin-top: 7px;
 }
 
 #premed {

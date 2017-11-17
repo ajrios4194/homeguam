@@ -47,6 +47,10 @@ body {
   border: 0;
 }
 
+.card > img {
+  margin-bottom: .75rem;
+  width: 100%;
+}
 
 
 .thumb {
@@ -58,14 +62,7 @@ body {
   text-align:center;
 }
 
-.card > img {
-  margin-bottom: .75rem;
-  width: 100%;
-}
 
-.card > img.gal {
-  height: 350px;
-}
 
 .card-text {
   font-size: 85%;
@@ -89,3 +86,11 @@ p a {
   color: #3ed8ee;
 }
 
+h4 {
+  font-size: 17px;
+  font-weight:10px;
+}
+
+iframe {
+  height: auto;
+}

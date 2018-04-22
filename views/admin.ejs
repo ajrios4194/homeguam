@@ -48,6 +48,7 @@
                 <% applicants.forEach(function(applicant){ %>
                     <tr>
                       <td><a href="/admin/<%=applicant._id%>"><%= applicant.full_name %></a></td>
+                      <td><a href="/admin/<%=applicant._id%>"><%= applicant.email %></a></td>
                       <% if (applicant.app_type === 1) { %>
                           <td>High School Student</td>
                       <% } else if(applicant.app_type === 2) { %>

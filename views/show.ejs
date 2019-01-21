@@ -46,10 +46,34 @@
                 <p><%= applicant.gpa%></p>
             </div>
         </div>
+              <div class="row midrow">
+            <div class="col-md-4">
+                <label><strong>Major or indended major:</strong></label>
+                <p><%= applicant.major%></p>
+            </div>
+            <div class="col-md-4">
+                <label><strong>Year In School</strong></label>
+                <p><%= applicant.year%></p>
+            </div>
+            <div class="col-md-4">
+                <label><strong>How did you discover HOME?</strong></label>
+                <p><%= applicant.discover%></p>
+            </div>
+        </div>
         <div class="row midrow">
             <div class="col">
                 <label><strong>Essay</strong></label>
                 <p><%= applicant.essay%></p>
+            </div>
+        </div>
+        <div class="row midrow">
+            <div class="col-md-6">
+                <label><strong>Special Circumstances</strong></label>
+                <p><%= applicant.extra%></p>
+            </div>
+            <div class="col-md-6">
+                <label><strong>Specialty Interest</strong></label>
+                <p><%= applicant.specialty%></p>
             </div>
         </div>
         <a class="bouncelinks" href="/admin">Back</a>

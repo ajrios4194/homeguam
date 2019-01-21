@@ -33,30 +33,51 @@
             </div>
           </div>
             <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                     <label for="applicationType">Application Type</label>
                     <select name="appl[app_type]" class="form-control studenttype">
                     <option value="1">High School Student</option></option>
                     </select>
                 </div>
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                     <label for="exampleFormControlSelect1">Birthday</label>
                      <input class="form-control" type="date" name="appl[bday]">
                 </div>
+                <div class="form-group col-md-4">
+                    <label for="exampleFormControlSelect1">Intended College Major</label>
+                     <input class="form-control" type="text" name="appl[major]">
+                </div>
             </div>
           <div class="form-row">
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-4">
                 <label for="exampleFormControlInput1">High School Name</label>
                 <input type="text" name="appl[school_type]"class="form-control" placeholder="High School Name">
               </div>
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-4">
                 <label for="exampleFormControlInput1">GPA</label>
                 <input type="text" name="appl[gpa]" class="form-control" placeholder="3.0">
+              </div>
+               <div class="form-group col-md-4">
+                    <label for="applicationType">Year In School</label>
+                    <select name="appl[year]" class="form-control studenttype">
+                    <option value="1">Freshman</option></option>
+                    <option value="1">Sophomore</option></option>
+                    <option value="1">Junior</option></option>
+                    <option value="1">Senior</option></option>
+                    </select>
               </div>
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Essay Prompt: Why are you interested in health care?</label>
             <textarea name="appl[essay]" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Are there any special circumstances you would like H.O.M.E. to know about? (optional)</label>
+            <textarea name="appl[extra]" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">How did you hear about HOME?</label>
+            <textarea name="appl[discover]" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
           </div>
           <div id="submit">
               <button type="submit" class="btn btn-primary btn-lg">Apply</button>

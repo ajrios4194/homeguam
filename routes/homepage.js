@@ -27,6 +27,11 @@ router.get("/community/hometeam", function(req,res){
    res.render("hometeam")
 });
 
+//HOME Team
+router.get("/community/sponsors", function(req,res){
+   res.render("sponsors")
+});
+
 //APPLICATION PAGE
 router.get("/apply", function(req,res) {
    res.render("application"); 
